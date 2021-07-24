@@ -36,5 +36,9 @@ export class ProfileService {
       return data;
     }));
   }
+  updateUser(username: string){
+    this.username = username;
+
+  }
     
 }

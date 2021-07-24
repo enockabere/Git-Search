@@ -9,13 +9,14 @@ import { ProfileService } from 'src/app/services/profile.service';
 export class ProfileComponent implements OnInit {
   public myUser:any=[];
   public repos:any=[];
+  public username: string = "";
     //inject service
   constructor(private profileService:ProfileService) { 
     
     
   } 
-  //call getUserInfo function that returns an observable
-  ngOnInit(): void{
+  findUser(){
+    this.profileService.updateUser(this.username);
     this.profileService.getUserInfo().subscribe((response: any) =>{
       this.myUser = response;
       console.log(response);
@@ -24,6 +25,10 @@ export class ProfileComponent implements OnInit {
       this.repos = myRepo;
       console.log(myRepo)
     });
+  }
+  //call getUserInfo function that returns an observable
+  ngOnInit(): void{
+    
   }
 
 }
