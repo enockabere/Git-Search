@@ -7,7 +7,8 @@ import { ProfileService } from 'src/app/services/profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  myUser:any;
+  public myUser:any=[];
+  public repos:any=[];
     //inject service
   constructor(private profileService:ProfileService) { 
     
@@ -19,7 +20,10 @@ export class ProfileComponent implements OnInit {
       this.myUser = response;
       console.log(response);
     });
-    
+    this.profileService.getUserRepo().subscribe((myRepo: any) =>{
+      this.repos = myRepo;
+      console.log(myRepo)
+    });
   }
 
 }
