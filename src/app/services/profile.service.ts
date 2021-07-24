@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -23,11 +24,10 @@ export class ProfileService {
   //function to collect data from github
   getUserInfo(){
     return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret)
-    // use .map so that data collect can be in form of observables
-
-    .pipe(map(data =>{})).subscribe(result =>{
-      console.log(result);
-    });
+    // use pipe to invoke the map method  so that data collected can be in form of observables
+    .pipe(map(data=>{
+      return data;
+    }));
   }
     
 }
