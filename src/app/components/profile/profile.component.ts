@@ -11,9 +11,9 @@ export class ProfileComponent implements OnInit {
     //inject service
   constructor(private profileService:ProfileService) { 
     
-    //call getUserInfo function that returns an observable
+    
   } 
-
+  //call getUserInfo function that returns an observable
   ngOnInit(): void{
     this.profileService.getUserInfo().subscribe((response: any) =>{
       this.myUser = response;
