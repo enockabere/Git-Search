@@ -29,5 +29,12 @@ export class ProfileService {
       return data;
     }));
   }
+  getUserRepo(){
+    return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.clientId + "&client_secret=" + this.clientSecret)
+    // use pipe to invoke the map method  so that data collected can be in form of observables
+    .pipe(map(data=>{
+      return data;
+    }));
+  }
     
 }
