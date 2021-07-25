@@ -52,3 +52,27 @@
     color: #164A41;
     font-weight: 600;
 }
+.second{
+    padding-top: 30px;
+}
+.card{
+    background-color:#DCE1E3;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 10px #aca3a3;
+    overflow: hidden;
+}
+.card-title{
+    color: #2d545e;
+}
+.th{
+    color: #c89666;
+}
+#btns{
+    background-color: #2d545e;
+    border: 1px solid #2d545e;
+}
+#btns:hover{
+    background-color: #c89666;
+}

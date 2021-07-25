@@ -1,4 +1,4 @@
-<section>
+<section class="first">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -87,31 +87,18 @@
         </div>
     </div>
 </section>
-
-<div >
-
-    <div class="panel panel-default">
-        
-        <div class="panel-body">
-            <div class="row">
-                
-                <div class="col-sm-4">
-                    
-                    <div class="card">
-                        <div class="card-title">
-                            <h3>Repos</h3>
-                        </div>
-                        <div class="card-body" *ngFor="let repo of repos">
-                            <p>
-                                {{repo.name}} <a href="{{repo.html_url}}" target="blank">View Project on Github</a>
-                                
-                            </p>
-                            <p>{{repo.description}}</p>
-                        </div>
-                    </div>
+<section class="second">
+    <div class="container">
+        <div class="row is-flex">
+            <div class="col-sm-4" *ngFor="let repo of repos">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="th">Repository:</span> {{repo.name}}</h5>
+                  <p class="card-text">{{repo.description}}</p>
+                  <a href="{{repo.html_url}}" target="blank" class="btn btn-primary" id="btns">View Project on Github</a>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
-
-</div>
+</section>
