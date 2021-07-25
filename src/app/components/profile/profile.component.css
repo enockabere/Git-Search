@@ -1,3 +1,13 @@
 .myForm{
     padding-top: 20px;
 }
+.brand{
+    padding-top: 20px;
+}
+.brand h3{ 
+    text-align: right;
+    font-size: 18px;
+}
+.br{
+    color:#c89666;
+}
