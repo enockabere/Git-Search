@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="myForm">
+                    <form>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Search Github Username" [(ngModel)]='username' name="username" (keyup)="findUser()">
+                          <!--keyup is an event binding that responds to DOM event, like when a user presses and releases a key-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

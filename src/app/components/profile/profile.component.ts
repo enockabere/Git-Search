@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from 'src/app/services/profile.service';
+import { User } from 'src/app/user';
 
 @Component({
   selector: 'gg-profile',
@@ -10,6 +11,7 @@ export class ProfileComponent implements OnInit {
   public myUser:any=[];
   public repos:any=[];
   public username: string = "";
+  public getUser= new User();
     //inject service
   constructor(private profileService:ProfileService) { 
     
