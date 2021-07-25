@@ -19,4 +19,99 @@
         </div>
     </div>
 </section>
+<section *ngIf="myUser">
+    <div class="container">
+        <div class="row is-flex">
+            <div class="col-md-3">
+                <div class="card-group">
+                    <div class="cards">
+                        <ul class="navs">
+                            <li class="mytag">Profile Picture</li>
+                            <li> <img src="{{myUser.avatar_url}}" class="img img-fluid" ></li>
+                        </ul>
+                        <ul class="navs">
+                            <li class="mytag">Public Name </li>
+                            <li>{{myUser.name}}</li>
+                        </ul>
+                        <ul class="navs">
+                            <li class="mytag">Followers</li>
+                            <li>{{myUser.followers}}</li>
+                        </ul>
+                        <ul class="navs">
+                            <li class="mytag">Following</li>
+                            <li>{{myUser.following}}</li>
+                        </ul>
+                        <ul class="navs">
+                            <li class="mytag">Public Gists</li>
+                            <li>{{myUser.public_gists}}</li>
+                        </ul>
+                        <ul class="navs" *ngIf='myUser.email'>
+                            <li class="mytag">Public Repos</li>
+                            <li>{{myUser.public_repos}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card-group">
+                    <div class="cards">
+                        <ul class="navs">
+                            <li class="mytag">Github Username</li>
+                            <li> {{myUser.login}}</li>
+                        </ul>
+                        <ul class="navs">
+                            <li class="mytag">User Bio </li>
+                            <li>{{myUser.bio}}</li>
+                        </ul>
+                        <ul class="navs" *ngIf="myUser.company">
+                            <li class="mytag">Company</li>
+                            <li>{{myUser.company}}</li>
+                        </ul>
+                        <ul class="navs" *ngIf='myUser.hireable'>
+                            <li class="mytag">Available For Hire</li>
+                            <li>Yes</li>
+                        </ul>
+                        <ul class="navs" *ngIf='myUser.blog'>
+                            <li class="mytag">User Blog</li>
+                            <li><a href="{{myUser.blog}}" target="blank">
+                                {{myUser.blog}}</a></li>
+                        </ul>
+                        <ul class="navs" *ngIf='myUser.email'>
+                            <li class="mytag">User Email</li>
+                            <li><a href="emailto:{{myUser.email}}">{{myUser.email}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
+<div >
+
+    <div class="panel panel-default">
+        
+        <div class="panel-body">
+            <div class="row">
+                
+                <div class="col-sm-4">
+                    
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>Repos</h3>
+                        </div>
+                        <div class="card-body" *ngFor="let repo of repos">
+                            <p>
+                                {{repo.name}} <a href="{{repo.html_url}}" target="blank">View Project on Github</a>
+                                
+                            </p>
+                            <p>{{repo.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

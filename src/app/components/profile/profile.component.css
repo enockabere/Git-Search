@@ -11,3 +11,44 @@
 .br{
     color:#c89666;
 }
+.row.is-flex{
+    display: flex;
+}
+.row.is-flex [class*="col-"]{
+    float: none;
+    display: flex;
+    
+}
+.card-group{
+    padding-top: 10px;
+}
+.cards{
+    background-color:  #fff5d7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 10px #aca3a3;
+    overflow: hidden;
+}
+.cards:hover{
+    background-color:   #DCE1E3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 10px #aca3a3;
+}
+.navs{
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+}
+.navs li{
+    display: inline-block;
+  padding: 4px;
+}
+.img{
+    width:40px;
+    height: auto;
+    border-radius: 50%;
+}.mytag{
+    color: #164A41;
+    font-weight: 600;
+}
