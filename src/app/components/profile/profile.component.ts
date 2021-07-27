@@ -11,7 +11,7 @@ export class ProfileComponent implements OnInit {
   public myUser:any=[];
   public repos:any=[];
   public username: string = "";
-  public getUser= new User();
+
     //inject service
   constructor(private profileService:ProfileService) { 
     
@@ -25,10 +25,9 @@ export class ProfileComponent implements OnInit {
     });
     this.profileService.getUserRepo().subscribe((myRepo: any) =>{
       this.repos = myRepo;
-      console.log(myRepo)
+      console.log(myRepo);
     });
   }
-  //call getUserInfo function that returns an observable
   ngOnInit(): void{
     
   }

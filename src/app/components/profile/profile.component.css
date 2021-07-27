@@ -1,3 +1,11 @@
+.two{
+    background-image: url(../../../assets/bg/2.jpg);
+    padding-bottom: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .myForm{
     padding-top: 20px;
 }

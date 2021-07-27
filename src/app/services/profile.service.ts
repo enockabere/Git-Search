@@ -42,7 +42,10 @@ export class ProfileService {
     }));
   }
   searchRepo(){
-    return this.http.get("https://api.github.com/repos/enockabere/" + this.repoName + "?client_id=" + this.clientId + "&client_secret=" + environment.clientSecret) 
+    return this.http.get("https://api.github.com/search/repositories?q=" + this.repoName + "&client_secret=" + environment.clientSecret) 
+    .pipe(map(data=>{
+      return data;
+    }));
   }
   updateUser(username: string){
     this.username = username;
