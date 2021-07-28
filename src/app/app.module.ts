@@ -4,19 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ProfileService } from './services/profile.service';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './components/profile/profile.component';
 import { FormsModule } from '@angular/forms';
-import { SidebarComponent } from './components/Landing/sidebar.component';
-import { ReposComponent } from './components/repos/repos.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    SidebarComponent,
-    ReposComponent 
+    routingComponents,
+    PageNotFoundComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
