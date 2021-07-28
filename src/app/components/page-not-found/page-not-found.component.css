@@ -9,9 +9,6 @@
     text-align: center;
 }
 
-body {
-    background-color: #000000;
-}
 section.notFound {
     display: flex;
     justify-content: center;

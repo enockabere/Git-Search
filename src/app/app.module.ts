@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { Alert404Directive } from './Directive/alert404.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     PageNotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    Alert404Directive
   ],
   imports: [
     BrowserModule,
