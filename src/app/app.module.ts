@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { Alert404Directive } from './Directive/alert404.directive';
+import { SpacesPipe } from './pipes/spaces.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Alert404Directive } from './Directive/alert404.directive';
     routingComponents,
     PageNotFoundComponent,
     NavbarComponent,
-    Alert404Directive
+    Alert404Directive,
+    SpacesPipe
   ],
   imports: [
     BrowserModule,
