@@ -13,7 +13,7 @@ A Github finder that allows users to search for Github users by username and Git
 
 * Clicking on ***Search Github by Repositories*** button the page redirects to another page where a visitor can search for github repositories.
 
-* ***Contact Us Envelope Icon*** at the bottom of the page prompts the visitor to write a direct email to the developer.
+* Contact Us ***Envelope Icon*** at the bottom of the page prompts the visitor to write a direct email to the developer.
 
 #### Landing Page Display
 
@@ -27,7 +27,7 @@ A Github finder that allows users to search for Github users by username and Git
 #### Behavior Driven Development
 * There is ***navigation bar*** to redirect the user to the home page/landing page, search by repositories page and contact us button that sends a direct message to the developer.
 
-* Start typing usernames of the github repositories that you want to find on the form and relevant profiles and repositories will start showing up as you type.
+* Start typing usernames of the github repositories that you want to find on an the provided input form and relevant profiles and repositories will start showing up as you type.
 
 * Once you are done typing the usernames, the page visitor will first see the background information of the searched user and ***View this user Repository*** button that will scroll the page to view repositories of that user.
 
@@ -45,7 +45,7 @@ A Github finder that allows users to search for Github users by username and Git
 #### Behavior Driven Development
 * There is ***navigation bar*** to redirect the user to the home page/landing page, search by repositories page and contact us button that sends a direct message to the developer.
 
-* Start typing on the form a repository name that you wish to find and related repositories will start showing up as you type.
+* Type a repository name on the form and related repositories will start showing up as you type.
 
 * Once you are done typing the repository names, the page visitor will first see repositories popping up on cards with information about the repository and link to view it on github.
 
@@ -59,7 +59,7 @@ A Github finder that allows users to search for Github users by username and Git
     This is an error page indicating that the browser was able to communicate with server but not able to find the page visitor request.
 
 #### Behavior Driven Development
-* The page will ask the visitor if he/she wishes to navigate back home. If yes, the visitor will be redirected to the landing page and if No the user will get an alert asking him/her to close the page.
+* The page will ask the visitor whether he/she wishes to navigate back to the Landing page. If yes, the visitor will be redirected to the landing page and if No the user will get an alert asking him/her to close the page.
 
 #### 404 Error Page Display
 
