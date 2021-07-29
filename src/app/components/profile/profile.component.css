@@ -129,3 +129,14 @@ ul.breadcrumb {
 .second{
     padding-top: 30px;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.cards {
+		width:100%;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.cards {
+		width:100%;
+	}
+}
