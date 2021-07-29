@@ -69,9 +69,10 @@
   background-color: black;
   border: 1px solid #F1B24A;
   color: white;
-  margin-left: 65%;
   font-family: fantasy;
   padding: 15px;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 #user:hover {
@@ -86,6 +87,8 @@
   color: black;
   padding: 15px;
   font-family: fantasy;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 #repo:hover {
@@ -118,13 +121,6 @@
 
 /*responsive*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  #user {
-    margin-left: 52%;
-  }
+  
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  #user {
-    margin-left: 42%;
-  }
-}
