@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/7bbb17b5-2cde-4108-aac0-eefcd439cf9f)](https://codebeat.co/projects/github-com-enockabere-git-search-master)
+
 # Git-Google/Git-Search
 ## Project Description
 A Github finder that allows users to search for Github users by username and Github repositories by repository names. 
