@@ -2,7 +2,7 @@
 
 # Git-Google/Git-Search
 ## Project Description
-A Github finder that allows users to search for Github users by username and Github repositories by repository names. 
+A Github googler that allows users to search for Github users by username and Github repositories by repository names. 
 ##### By Enock Abere 
 
 ###### Dated 29/07/2021.
